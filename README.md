@@ -1,24 +1,22 @@
-# README
+** Breath of Fantasy **
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para rodar o jogo, necessita ter o rails 6 e o ruby-dev instalados na máquina
 
-Things you may want to cover:
+Clonar o projeto, ir na pasta raiz dele e realizar os seguintes comandos:
 
-* Ruby version
+Instalar as dependencias do projeto:
+`bundle install`
 
-* System dependencies
+Fazer a migração dos dados:
+`rake db:migrate`
 
-* Configuration
+Rodar o console do Rails:
+`rails c`
 
-* Database creation
+Após estes passos, deve ser criado dois personagens com o seguinte comando (o primeiro campo representa o nome dele, o segundo os pontos de energia e o terceiro os pontos de poder):
 
-* Database initialization
+`GameController.criar_personagem("Herói 80 45")`
+`GameController.criar_personagem("Vilão 80 45")`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Por fim, inicia-se o jogo com o seguinte comando e o será imprimido o resultado:
+`GameController.iniciar`
