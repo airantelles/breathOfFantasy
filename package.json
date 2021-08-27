@@ -1,5 +1,5 @@
 {
-  "name": "fighting-game",
+  "name": "breath-of-fantasy",
   "private": true,
   "dependencies": {
     "@rails/ujs": "^6.0.0",
